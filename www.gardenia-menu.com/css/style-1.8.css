@@ -13,8 +13,8 @@ html, body {
     -ms-text-size-adjust: 100%;
     text-size-adjust: 100%;
     margin: 0;
-    color: #5a5a5a;
-    font-family: 'El Messiri', sans-serif;
+    color: #4a4641;
+    font-family: 'Cairo', sans-serif;
     font-size: 24px;
     width: 640px
 }
@@ -35,7 +35,7 @@ html, body {
 }
 
 a {
-    color: #5a5a5a
+    color: #4a4641
 }
 
 .dark {
@@ -132,14 +132,14 @@ html, body {
     .profile h1 {
         padding-top: 10px;
         font-size: 34px;
-        color: #5a5a5a;
+        color: #4a4641;
         padding-bottom: 12px;
         font-family: museosans300,Arial,Helvetica,sans-serif
     }
 
     .profile .name {
         font-size: 24px;
-        color: #5a5a5a
+        color: #4a4641
     }
 
     .profile .title {
@@ -150,7 +150,7 @@ html, body {
 .review {
     padding-top: 51px;
     text-align: center;
-    color: #5a5a5a;
+    color: #4a4641;
     font-size: 30px
 }
 
@@ -205,7 +205,7 @@ html, body {
     display: block;
     margin: 0 auto 14px;
     text-decoration: none;
-    color: #5a5a5a;
+    color: #4a4641;
     font-family: museosans700,Arial,Helvetica,sans-serif;
     border: 1px solid #b3b3b3;
     border-radius: 4px;
@@ -222,7 +222,7 @@ html, body {
         display: block;
         margin: 0 auto 14px;
         text-decoration: none;
-        color: #5a5a5a;
+        color: #4a4641;
         border: 1px solid #b3b3b3;
         border-radius: 4px;
         width: unset
@@ -234,8 +234,8 @@ html, body {
     }
 
     .button.blue {
-        background-color: #18385e;
-        border-color: #165183;
+        background-color: #2E3A23;
+        border-color: #4A5D23;
         color: #fff;
         text-shadow: 1px 1px 2px #1b5e97
     }
@@ -267,7 +267,7 @@ html, body {
 
 h2 {
     padding: 50px 0 35px;
-    color: #5a5a5a;
+    color: #4a4641;
     font-family: museosans700,Arial,Helvetica,sans-serif;
     font-size: 32px
 }
@@ -277,7 +277,7 @@ h3 {
     font-size: 26px;
     font-family: museosans700,Arial,Helvetica,sans-serif;
     padding: 30px 0 40px;
-    color: #2d94ef;
+    color: #8B0000;
     font-weight: 400
 }
 
@@ -292,15 +292,15 @@ h3 {
     vertical-align: middle;
     width: 5.875em;
     height: 38px;
-    background-color: #1069ff;
-    border-color: #0051f2;
+    background-color: #2E3A23;
+    border-color: #2E3A23;
     border-width: 1px;
     font-weight: 400;
     border-radius: 5px;
     font-family: museosans700,Arial,Helvetica,sans-serif;
     font-size: 24p;
     color: #fff;
-    text-shadow: 1px 1px 2px #0b4cca;
+    text-shadow: 1px 1px 2px #1A2312;
     overflow: hidden
 }
 
@@ -357,8 +357,8 @@ form button.submit {
     font-family: museosans700,Arial,Helvetica,sans-serif;
     border: 1px solid #b3b3b3;
     border-radius: 4px;
-    background-color: #2d94ef;
-    border-color: #165183;
+    background-color: #8B0000;
+    border-color: #4A5D23;
     color: #fff;
     text-shadow: 1px 1px 2px #1b5e97
 }
@@ -374,7 +374,7 @@ form.bordered {
 
 form legend {
     font-size: 18px;
-    color: #5a5a5a;
+    color: #4a4641;
     font-family: museosans700,Arial,Helvetica,sans-serif;
     width: 143px;
     text-align: center;
@@ -420,7 +420,7 @@ form legend {
         height: 32px;
         line-height: 32px;
         padding-top: 15px;
-        color: #18385e;
+        color: #2E3A23;
         float: right;
         background-image: url(../images/searchbar-categories-more.html);
         background-repeat: no-repeat;
@@ -462,7 +462,7 @@ form legend {
         height: 32px;
         line-height: 32px;
         padding-top: 15px;
-        color: #2a8fe8;
+        color: #8B0000;
         float: right;
         background-image: url(../images/searchbar-categories-more.html);
         background-repeat: no-repeat;
@@ -543,7 +543,7 @@ ul.list {
 
     ul.list .title {
         font-size: 34px;
-        color: #5a5a5a;
+        color: #4a4641;
         padding-top: 45px;
         display: block;
         padding-bottom: 5px;
@@ -551,7 +551,7 @@ ul.list {
     }
 
     ul.list .details.blue .title {
-        color: #2a8ee5
+        color: #8B0000
     }
 
     ul.list .details.gray .title {
@@ -566,7 +566,7 @@ ul.list {
     }
 
     ul.list .details.blue .description {
-        color: #2a8ee5
+        color: #8B0000
     }
 
     ul.list .details.gray .description {
@@ -609,7 +609,7 @@ ul.list {
             border-radius: 15px;
             padding-top: 15px;
             padding-bottom: 15px;
-            color: #5a5a5a;
+            color: #4a4641;
             font-family: MuseoSans500;
             font-size: 35px
         }
@@ -693,7 +693,7 @@ ul.list .logo img {
 
 ul.list-rtl .title {
     font-size: 34px;
-    color: #5a5a5a;
+    color: #4a4641;
     padding-top: 45px;
     display: block;
     padding-bottom: 5px;
@@ -701,7 +701,7 @@ ul.list-rtl .title {
 }
 
 ul.list-rtl .details.blue .title {
-    color: #2a8ee5
+    color: #8B0000
 }
 
 ul.list .details.gray .title {
@@ -716,7 +716,7 @@ ul.list-rtl .description {
 }
 
 ul.list-rtl .details.blue .description {
-    color: #2a8ee5
+    color: #8B0000
 }
 
 ul.list-rtl .details.gray .description {
@@ -736,7 +736,7 @@ ul.list-rtl .more {
     text-align: center;
     font-size: 20px;
     font-weight: 400;
-    color: #5a5a5a;
+    color: #4a4641;
     padding-left: 45px;
     padding-right: 45px;
     margin-top: 10px;
@@ -801,7 +801,7 @@ ul.list-rtl li.manager-alert-answer {
         border-radius: 15px;
         padding-top: 15px;
         padding-bottom: 15px;
-        color: #5a5a5a;
+        color: #4a4641;
         font-family: MuseoSans500;
         font-size: 35px
     }
@@ -820,7 +820,7 @@ ul.list-rtl li.manager-alert-answer {
     border-radius: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
-    color: #5a5a5a;
+    color: #4a4641;
     font-family: MuseoSans500;
     font-size: 35px
 }
@@ -836,7 +836,7 @@ ul.list-rtl li.manager-alert-answer {
 
 .manager-alert-instruction-title {
     display: block;
-    color: #2d94ef;
+    color: #8B0000;
     font-size: 40px;
     margin-top: 20px;
     font-weight: 600
@@ -846,7 +846,7 @@ ul.list-rtl li.manager-alert-answer {
     background-color: #fff;
     text-align: left;
     font-size: 20px;
-    color: #5a5a5a;
+    color: #4a4641;
     font-family: museosans300,Arial,Helvetica,sans-serif;
     padding: 40px 0 20px 170px
 }
@@ -869,7 +869,7 @@ ul.list-rtl li.manager-alert-answer {
         font-size: 34px;
         line-height: 34px;
         padding-bottom: 20px;
-        color: #5a5a5a
+        color: #4a4641
     }
 
     .company-profile .onlyname {
@@ -878,7 +878,7 @@ ul.list-rtl li.manager-alert-answer {
         line-height: 34px;
         padding-bottom: 40px;
         padding-top: 34px;
-        color: #5a5a5a
+        color: #4a4641
     }
 
     .company-profile .phone {
@@ -911,7 +911,7 @@ ul.list-rtl li.manager-alert-answer {
     background-color: #fff;
     text-align: right;
     font-size: 20px;
-    color: #5a5a5a;
+    color: #4a4641;
     font-family: museosans300,Arial,Helvetica,sans-serif;
     padding: 40px 170px 20px 0
 }
@@ -934,7 +934,7 @@ ul.list-rtl li.manager-alert-answer {
         font-size: 34px;
         line-height: 34px;
         padding-bottom: 20px;
-        color: #5a5a5a
+        color: #4a4641
     }
 
     .company-profile-rtl .onlyname {
@@ -943,7 +943,7 @@ ul.list-rtl li.manager-alert-answer {
         line-height: 34px;
         padding-bottom: 40px;
         padding-top: 34px;
-        color: #5a5a5a
+        color: #4a4641
     }
 
     .company-profile-rtl .phone {
@@ -992,7 +992,7 @@ ul.list-rtl li.manager-alert-answer {
     text-align: left;
     min-height: 36px;
     font-size: 25px;
-    color: #5a5a5a;
+    color: #4a4641;
     padding-left: 15px;
     padding-top: 12px;
     padding-bottom: 6px;
@@ -1001,7 +1001,7 @@ ul.list-rtl li.manager-alert-answer {
 }
 
     .notice.dark {
-        color: #5a5a5a !important;
+        color: #4a4641 !important;
         background-color: transparent;
         min-height: 36px
     }
@@ -1011,7 +1011,7 @@ ul.list-rtl li.manager-alert-answer {
     text-align: right;
     min-height: 36px;
     font-size: 25px;
-    color: #5a5a5a;
+    color: #4a4641;
     padding-right: 15px;
     padding-top: 12px;
     padding-bottom: 6px;
@@ -1020,7 +1020,7 @@ ul.list-rtl li.manager-alert-answer {
 }
 
     .notice-rtl.dark {
-        color: #5a5a5a !important;
+        color: #4a4641 !important;
         background-color: transparent;
         min-height: 36px
     }
@@ -1040,7 +1040,7 @@ ul.list-rtl li.manager-alert-answer {
 
         .questions .progressbar .progress {
             height: 20px;
-            background-color: #2d94ef
+            background-color: #8B0000
         }
 
     .questions .notice {
@@ -1061,7 +1061,7 @@ ul.list-rtl li.manager-alert-answer {
         width: 84%;
         margin: 0 auto;
         text-align: left;
-        color: #5a5a5a;
+        color: #4a4641;
         font-size: 30px;
         line-height: 36px;
         min-height: 90px;
@@ -1088,7 +1088,7 @@ ul.list-rtl li.manager-alert-answer {
 
         .questions-rtl .progressbar .progress {
             height: 20px;
-            background-color: #2d94ef
+            background-color: #8B0000
         }
 
     .questions-rtl .notice {
@@ -1109,7 +1109,7 @@ ul.list-rtl li.manager-alert-answer {
         width: 84%;
         margin: 0 auto;
         text-align: right;
-        color: #5a5a5a;
+        color: #4a4641;
         font-size: 30px;
         line-height: 36px;
         min-height: 90px;
@@ -1135,7 +1135,7 @@ ul.list-rtl li.manager-alert-answer {
     .rating .score big {
         font-family: museosans500,Arial,Helvetica,sans-serif;
         font-size: 60px;
-        color: #5a5a5a
+        color: #4a4641
     }
 
 .rating .messages {
@@ -1234,15 +1234,15 @@ button.submit.red {
     }
 
 button.submit.blue, .button.blue {
-    background-color: #18385e;
-    border-color: #165183;
+    background-color: #2E3A23;
+    border-color: #4A5D23;
     transition: background-color .2s;
     transition-delay: 300ms
 }
 
     button.submit.blue:active, .button.blue:active {
         background-color: #0d69ba;
-        border-color: #165183;
+        border-color: #4A5D23;
         transition: none
     }
 
@@ -1263,7 +1263,7 @@ button.submit.orange, .button.orange {
 button.submit.gray, .button.gray {
     background-color: #f4f4f4;
     border-color: #b3b3b3;
-    color: #5a5a5a;
+    color: #4a4641;
     text-shadow: none
 }
 
@@ -1292,7 +1292,7 @@ button.submit.black, .button.black {
     background-repeat: no-repeat;
     background-position: 13px 10px;
     font-size: 30px;
-    color: #2a8ee5;
+    color: #8B0000;
     font-family: museosans300,Arial,Helvetica,sans-serif;
     text-align: left
 }
@@ -1314,7 +1314,7 @@ button.submit.black, .button.black {
     text-align: right;
     font-size: 32px;
     line-height: 38px;
-    color: #5a5a5a;
+    color: #4a4641;
     padding-right: 50px;
     padding-bottom: 70px
 }
@@ -1401,7 +1401,7 @@ textarea {
 }
 
 .darkIcons {
-    color: #5a5a5a
+    color: #4a4641
 }
 
 .medIcons {
@@ -1421,7 +1421,7 @@ textarea {
 }
 
 .gray {
-    color: #5a5a5a
+    color: #4a4641
 }
 
 .donotdisplay {
@@ -1432,7 +1432,7 @@ textarea {
     background-color: #fff;
     text-align: left;
     font-size: 20px;
-    color: #5a5a5a;
+    color: #4a4641;
     font-family: museosans300,Arial,Helvetica,sans-serif;
     padding: 40px 0 20px 0;
     min-height: 200px
@@ -1441,7 +1441,7 @@ textarea {
     .target-offer .reward {
         font-size: 40px;
         line-height: 50px;
-        color: #5a5a5a;
+        color: #4a4641;
         margin-right: 12px;
         min-height: 200px;
         padding-bottom: 0;
@@ -1472,7 +1472,7 @@ textarea {
     .target-offer .detail {
         font-size: 34px;
         line-height: 45px;
-        color: #5a5a5a;
+        color: #4a4641;
         padding-right: 30px;
         padding-left: 30px;
         padding-bottom: 0;
@@ -1482,7 +1482,7 @@ textarea {
 
 .tb_legend {
     font-size: 18px;
-    color: #5a5a5a;
+    color: #4a4641;
     font-family: museosans700,Arial,Helvetica,sans-serif;
     width: 143px;
     text-align: center;
@@ -1498,7 +1498,7 @@ textarea {
     text-align: left;
     height: 28px;
     font-size: 14px;
-    color: #5a5a5a;
+    color: #4a4641;
     padding-top: 15px;
     background-image: url(../images/poweredby.html);
     background-repeat: no-repeat;
@@ -1564,7 +1564,7 @@ select.culture {
     text-align: center;
     font-size: 25px;
     font-weight: 400;
-    color: #5a5a5a;
+    color: #4a4641;
     padding-left: 55px;
     padding-right: 45px;
     margin-top: 40px;
@@ -1962,7 +1962,7 @@ input[type=checkbox] {
         top: 555px;
         left: -125px;
         width: 300px;
-        font-family: 'El Messiri', sans-serif;
+        font-family: 'Cairo', sans-serif;
     }
 
 #main {
@@ -2524,7 +2524,7 @@ ul.menu {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    font-family: 'El Messiri', sans-serif;
+    font-family: 'Cairo', sans-serif;
     color: #222 !important;
     font-weight: 700;
 }
@@ -2983,7 +2983,7 @@ ul.menu {
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
     border: 1.5px solid #d3d3d3;
-    background-color: #165183;
+    background-color: #4A5D23;
     color: #fff;
     padding-top: 10px;
     display: flex;
@@ -3039,7 +3039,7 @@ ul.menu {
 .multichoiceReview {
     padding-top: 51px;
     text-align: center;
-    color: #5a5a5a;
+    color: #4a4641;
     font-size: 30px
 }
 
@@ -3220,7 +3220,7 @@ ul.menu {
 }
 
 #filter {
-    font-family: 'El Messiri', sans-serif;
+    font-family: 'Cairo', sans-serif;
     padding-right: 13px;
     direction: rtl;
     border: 1px solid #ddd;

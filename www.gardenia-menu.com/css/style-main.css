@@ -22,9 +22,9 @@ Version: 1.0
 }
 
 body {
-    font-family: 'Almarai', sans-serif;
-    font-size: 13px;
-    background-color: #f0f2f5;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 14px;
+    background-color: #f4f3ec;
 }
 
 .sallat-btn {
@@ -40,8 +40,8 @@ body {
     font-size: 17px;
     width: 100%;
     line-height: 1.5;
-    color: #585859;
-    background-color: #f1ee7e;
+    color: #fdfdfd;
+    background-color: #C2A878;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
@@ -53,17 +53,17 @@ body {
 }
 
     .sallat-btn:active {
-        color: #f8f6f4;
-        background-color: #ffac1f;
-        border-color: #00a319;
-        box-shadow: 0px 4px 8px #a9a5a48a;
+        color: #ffffff;
+        background-color: #8B6A33;
+        border-color: #5A4522;
+        box-shadow: 0px 4px 8px #5c47238a;
         transform: scale(0.99);
     }
 
     .sallat-btn:hover {
         color: #ffffff;
-        background-color: #ffac1f;
-        border-color: #00a319;
+        background-color: #8B6A33;
+        border-color: #5A4522;
         text-decoration: none !important;
         font-weight: bold;
     }
@@ -125,7 +125,7 @@ body {
     min-height: 100%;
     width: 114% !important;
     z-index: 0;
-    background: #0400002e;
+    background: #16130b42;
 }
 
 /* =========== */
