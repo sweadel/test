@@ -2131,7 +2131,7 @@
                     loop_item = loop_item.replace(/{{code}}/g, mainList[list_loop].code);
                     loop_item = loop_item.replace(/{itemid}/g, mainList[list_loop].code);
                     loop_item = loop_item.replace(/{{name}}/g, mainList[list_loop].listNameAr);
-                    loop_item = loop_item.replace(/{{image}}/g, '/images/cats/' + mainList[list_loop].image);
+                    loop_item = loop_item.replace(/{{image}}/g, 'images/cats/' + mainList[list_loop].image);
 
                     $('#out-f-slider').append(loop_item);
 
@@ -2166,7 +2166,7 @@
 
                                 if (menuItems[items_loop].is_brakfast == true) {
 
-                                    loop_item = loop_item.replace(/{{image}}/g, '/images/Plates/P' + menuItems[items_loop].photoRef + '.JPG');
+                                    loop_item = loop_item.replace(/{{image}}/g, 'images/Plates/P' + menuItems[items_loop].photoRef + '.JPG');
                                     loop_item = loop_item.replace(/{{itemprice}}/g, menuItems[items_loop].price.toFixed(2));
 
                                     loop_item = loop_item.replace(/{{itemname}}/g, menuItems[items_loop].nameAr);
@@ -2203,7 +2203,7 @@
 
                                 }
 
-                                loop_item = loop_item.replace(/{{image}}/g, '/images/Plates/P' + menuItems[items_loop].photoRef + '.JPG');
+                                loop_item = loop_item.replace(/{{image}}/g, 'images/Plates/P' + menuItems[items_loop].photoRef + '.JPG');
                                 loop_item = loop_item.replace(/{{itemprice}}/g, menuItems[items_loop].price.toFixed(2));
 
                                 loop_item = loop_item.replace(/{{itemname}}/g, menuItems[items_loop].nameAr);
