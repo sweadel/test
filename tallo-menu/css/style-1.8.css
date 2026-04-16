@@ -58,13 +58,14 @@ a {
 
     .header .logo {
         background-image: url(../images/tallo-logo.png);
-        width: 251px;
-        height: 72px;
+        width: 300px; /* Made it slightly larger for better visibility */
+        height: 80px;
         background-repeat: no-repeat;
+        background-size: contain;
         display: block;
-        margin: 8px auto;
-        opacity: 0.9;
-        filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.8));
+        margin: 4px auto;
+        opacity: 1; /* Keeping it clear */
+        filter: drop-shadow(0px 2px 8px rgba(0,0,0,0.9)); /* Stronger shadow for premium feel */
     }
 
 html, body {
@@ -1781,15 +1782,16 @@ input[type=checkbox] {
     }
 
         .menuSideBar .sideBarheader .logo {
-            width: 251px;
-            height: 72px;
+            width: 280px;
+            height: 75px;
             background-repeat: no-repeat;
+            background-size: contain;
             display: block;
             margin: auto;
             padding: 0;
-            margin-top: 8px;
-            opacity: 0.9;
-            filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.8));
+            margin-top: 12px;
+            opacity: 1;
+            filter: drop-shadow(0px 2px 10px rgba(0,0,0,0.9));
         }
 
     .menuSideBar a {
@@ -2175,10 +2177,13 @@ ul.menu {
         }
 
         ul.menu li.product.bubbleImageSideAligned {
-            border-radius: 15px;
-            margin: 15px 10px 0;
-            border: 1px solid #ddddddde;
-            box-shadow: 0 0px 3px rgb(0 0 0 / 4%);
+            border-radius: 16px;
+            margin: 18px 15px 5px;
+            border: 1px solid rgba(194, 168, 120, 0.2); /* Golden border tint */
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12); /* Rich deep shadow */
+            background: #ffffff;
+            overflow: hidden;
+            transition: all 0.3s ease;
         }
 
         ul.menu li.product.bubbleImageRightAligned {
