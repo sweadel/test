@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>خبرنا عن تجربتك | طلو أحبابنا</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <style>
+        body { background-color: #f4f3ec; font-family: 'Tajawal', sans-serif; padding-bottom: 50px;}
+        .header-top { background-color: #000; padding: 15px; text-align: center; border-bottom: 3px solid #C2A878;}
+        .logo-img { height: 70px; }
+        .btn-custom { background-color: #C2A878; color: white; font-weight: bold; border:none; padding: 14px; font-size: 18px; border-radius: 8px; transition: 0.3s;}
+        .btn-custom:hover { background-color: #8B6A33; color: white; transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .star-rating { font-size: 3rem; color: #e0e0e0; cursor: pointer; direction: ltr; margin:15px 0;}
+        .star-rating .star { transition: color 0.2s; }
+        .star-rating .star:hover, .star-rating .star.active { color: #f5b301; text-shadow: 0 0 5px rgba(245, 179, 1, 0.4);}
+        .container-box { 
+            background: white; border-radius: 16px; padding: 40px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;
+        }
+        .form-control { border-radius: 8px; padding: 12px; border: 1px solid #ddd; transition: 0.3s; background-color: #fdfdfd;}
+        .form-control:focus { border-color: #C2A878; box-shadow: 0 0 0 0.2rem rgba(194, 168, 120, 0.25); background-color: #fff;}
+        .form-label { font-weight: 700; color: #2E3A23; margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+    <div class="header-top">
+        <a href="index.html"><img src="images/tallo-logo.png" class="logo-img" alt="طلو أحبابنا"></a>
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-7 col-lg-6 container-box">
+                <h3 class="text-center font-weight-bold mb-2" style="color: #2E3A23;">رأيك بيهمنا</h3>
+                <p class="text-center text-muted mb-4" style="font-size: 15px;">قيم تجربتك في مطعم طلو أحبابنا لمساعدتنا في تقديم الأفضل دائماً</p>
+                <form id="opinionForm">
+                    <div class="form-group text-center mb-4">
+                        <label class="form-label" style="font-size: 18px;">ما هو تقييمك العام؟</label><br>
+                        <div class="star-rating" id="stars">
+                            <span class="star" data-val="1">★</span>
+                            <span class="star" data-val="2">★</span>
+                            <span class="star" data-val="3">★</span>
+                            <span class="star" data-val="4">★</span>
+                            <span class="star" data-val="5">★</span>
+                        </div>
+                        <input type="hidden" id="ratingInput" value="5">
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label class="form-label">الاسم (اختياري)</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="اسمك الكريم">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label class="form-label">رقم الهاتف (اختياري)</label>
+                            <input type="tel" class="form-control" id="phoneInput" placeholder="للتواصل معك إذا لزم">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group mb-4">
+                        <label class="form-label">ملاحظاتك أو اقتراحاتك</label>
+                        <textarea class="form-control" id="commentInput" rows="4" placeholder="كيف كانت جودة الطعام والخدمة؟"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-custom w-100">إرسال التقييم</button>
+                    
+                    <div class="text-center mt-4">
+                        <a href="reviews.html" style="color:#8B0000; font-weight: 700; text-decoration: underline;">عرض التقييمات السابقة لك وللآخرين</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const stars = document.querySelectorAll('.star');
+        const ratingInput = document.getElementById('ratingInput');
+        
+        function updateStars(val) {
+            stars.forEach(s => {
+                if(parseInt(s.getAttribute('data-val')) <= val) {
+                    s.classList.add('active');
+                } else {
+                    s.classList.remove('active');
+                }
+            });
+        }
+        updateStars(5);
+
+        stars.forEach(star => {
+            star.addEventListener('click', function() {
+                const val = this.getAttribute('data-val');
+                ratingInput.value = val;
+                updateStars(val);
+            });
+        });
+
+        document.getElementById('opinionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            let n = document.getElementById('nameInput').value.trim();
+            const review = {
+                name: n ? n : 'زائر',
+                comment: document.getElementById('commentInput').value.trim(),
+                rating: ratingInput.value,
+                date: new Date().toLocaleDateString('ar-EG')
+            };
+
+            let reviews = JSON.parse(localStorage.getItem('tallo_reviews') || '[]');
+            reviews.unshift(review);
+            localStorage.setItem('tallo_reviews', JSON.stringify(reviews));
+
+            alert('شكراً لك! تم إرسال تقييمك لمطعم طلو أحبابنا بنجاح.');
+            window.location.href = 'reviews.html';
+        });
+    </script>
+</body>
+</html>
