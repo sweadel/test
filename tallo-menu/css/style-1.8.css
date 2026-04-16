@@ -49,16 +49,22 @@ a {
     float: left;
     text-align: center;
     overflow: hidden;
-    background-color: #fff
+    background-color: #000;
+    background-image: url(../images/sadu-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid #C2A878;
 }
 
     .header .logo {
-        background-image: url(../images/logo.html);
+        background-image: url(../images/tallo-logo.png);
         width: 251px;
         height: 72px;
         background-repeat: no-repeat;
         display: block;
-        margin: 8px auto
+        margin: 8px auto;
+        opacity: 0.9;
+        filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.8));
     }
 
 html, body {
@@ -1766,7 +1772,12 @@ input[type=checkbox] {
         overflow: hidden;
         height: 100px;
         float: unset;
-        margin-bottom: 30px
+        margin-bottom: 30px;
+        background-color: #000;
+        background-image: url(../images/sadu-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        border-bottom: 2px solid #C2A878;
     }
 
         .menuSideBar .sideBarheader .logo {
@@ -1776,7 +1787,9 @@ input[type=checkbox] {
             display: block;
             margin: auto;
             padding: 0;
-            margin-top: 8px
+            margin-top: 8px;
+            opacity: 0.9;
+            filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.8));
         }
 
     .menuSideBar a {
@@ -2112,15 +2125,19 @@ ul.menu {
     }
 
         ul.menu li.menuCategory {
-            background: #f1ee7d;
-            border-bottom: 1px solid #e5e5e5;
+            background-image: url(../images/sadu-bg.jpg);
+            background-size: cover;
+            background-repeat: repeat-x;
+            background-position: center;
+            border-bottom: 2px solid #C2A878;
         }
 
             ul.menu li.menuCategory .categoryName {
                 padding-top: 13px;
                 padding-bottom: 13px;
                 text-align: center;
-                color: #57575a;
+                color: #ffffff;
+                text-shadow: 1px 1px 4px #000000;
             }
 
             ul.menu li.menuCategory .menuName {
